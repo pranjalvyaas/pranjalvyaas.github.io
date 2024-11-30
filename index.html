@@ -10,109 +10,73 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <!-- Google Fonts (Roboto for clean and modern look) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <style>
-        /* Global Body Style */
+        /* Body and General Styles */
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #0288d1 !important; /* Ocean Blue */
-            color: white;
+            background-color: #F5F5F5; /* Soft light gray */
+            color: #212121; /* Dark gray for text */
+            margin: 0;
+            padding: 0;
         }
 
         /* Navbar Style */
-        header, .nav-wrapper, .navbar, .navbar a {
+        nav {
             background-color: #0288d1 !important; /* Ocean Blue */
+        }
+
+        .nav-wrapper {
+            background-color: #0288d1 !important; /* Ocean Blue */
+        }
+
+        .navbar {
+            background-color: #0288d1 !important; /* Ocean Blue */
+        }
+
+        .navbar a {
+            color: white !important;
+            font-size: 16px;
+            padding: 15px;
+        }
+
+        .navbar a:hover {
             color: white !important;
         }
 
-        /* Navbar Text Hover Effect */
-        .navbar a:hover {
-            color: #80d3f5 !important; /* Light Ocean Blue */
-        }
-
-        /* Dropdown Background */
-        .dropdown-content {
-            background-color: #0288d1 !important;
-        }
-
-        /* Navbar Dropdown Item Hover */
-        .dropdown-content li:hover {
-            background-color: #80d3f5 !important;
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 60px 0;
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
         }
 
         .section h3 {
-            color: #80d3f5; /* Light Ocean Blue */
-            font-weight: 600;
+            color: #80d3f5; /* Lighter Ocean Blue */
             font-family: 'Ubuntu', sans-serif;
-        }
-
-        /* Button Styles */
-        .btn {
-            background-color: #0288d1;
-        }
-
-        .btn:hover {
-            background-color: #80d3f5;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #0288d1;
-            color: white;
-            padding: 20px 0;
-        }
-
-        footer a {
-            color: #80d3f5;
-        }
-
-        footer a:hover {
-            color: #0288d1;
-        }
-
-        /* Social Icon Styles */
-        .social-icons a {
+            font-weight: 600;
             font-size: 2rem;
-            margin: 0 10px;
-            color: #80d3f5 !important; /* Set social icon color to light blue */
-        }
-
-        .social-icons a:hover {
-            color: #0288d1 !important; /* Set hover color to ocean blue */
-        }
-
-        /* About Section Image */
-        .about-section img {
-            border-radius: 50%;
-            width: 200px;
+            text-align: center;
         }
 
         /* Card Styles */
-        .card-content {
-            background-color: #0288d1 !important; /* Ocean Blue */
+        .card {
+            background-color: #0288d1; /* Ocean Blue */
         }
 
         .card-title {
-            color: #80d3f5;
+            color: #80d3f5; /* Lighter Ocean Blue */
             font-family: 'Ubuntu', sans-serif;
             font-weight: 700;
         }
 
         .card p {
-            color: #b2ebf2;
+            color: #b2ebf2; /* Light Sky Blue */
         }
 
-        /* Flexbox Layout for Achievements Section */
         .achievements-section .container {
             display: flex;
             flex-wrap: wrap;
@@ -131,15 +95,55 @@
             }
         }
 
-        .achievements-section .card .card-content {
-            padding: 15px;
+        /* Social Media Icons */
+        .social-icons a {
+            font-size: 2rem;
+            margin: 0 10px;
+            color: #80d3f5; /* Lighter Ocean Blue */
+        }
+
+        /* Removed hover effect from Social Media Icons */
+        .social-icons a:hover {
+            color: #0288d1; /* Ocean Blue */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0288d1;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #80d3f5;
+        }
+
+        footer a:hover {
+            color: #0288d1;
+        }
+
+        /* Button Styles */
+        button, .btn {
+            background-color: #FF7043; /* Coral Orange for CTA */
+            color: white;
+        }
+
+        button:hover, .btn:hover {
+            background-color: #FFCC80; /* Light Coral on hover */
+        }
+
+        /* Image Styling */
+        .about-section img {
+            border-radius: 50%;
+            width: 200px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <header>
         <nav>
             <div class="nav-wrapper container">
@@ -155,13 +159,11 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section about-section">
+    <section id="about">
         <div class="container">
-            <h3 class="center-align">About Me</h3>
-            <p class="center-align">
-                I am Pranjal Vyas, a  psychologist with a passion for bridging modern psychology and ancient
-                spiritual techniques. As a person with spastic diplegic cerebral palsy, my journey has been one of resilience
-                and constant learning. My work integrates mental health expertise with a deep understanding of spiritual healing.
+            <h3>About Me</h3>
+            <p>
+                I am Pranjal Vyas, a  psychologist with a passion for integrating modern psychology with ancient spiritual techniques. As someone living with spastic diplegic cerebral palsy, my journey has been one of resilience and learning. My work emphasizes mental health and the importance of holistic healing.
             </p>
             <div class="row center-align">
                 <img src="https://avatars.githubusercontent.com/u/11768143?v=4" alt="Pranjal Vyas" class="circle responsive-img">
@@ -170,15 +172,15 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
+    <section id="projects" class="section">
         <div class="container">
-            <h3 class="center-align">My Projects</h3>
+            <h3>My Projects</h3>
             <div class="row">
                 <div class="col s12 m6">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Bindaas Bol</span>
-                            <p>A project aimed at spreading awareness about sex, sexuality, and reproductive health among people from all walks of life. Through discussions and content, we create an open and inclusive environment for learning about such important topics.</p>
+                            <p>A project that promotes awareness about sex, sexuality, and reproductive health in a safe and inclusive space for all.</p>
                         </div>
                     </div>
                 </div>
@@ -186,7 +188,7 @@
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Website Development - RPWD16</span>
-                            <p>Developed and launched a website dedicated to the Rights of Persons with Disabilities Act, 2016 (RPWD 16). This platform provides information about legal rights and resources for persons with disabilities.</p>
+                            <p>Created a website dedicated to the Rights of Persons with Disabilities Act, 2016. This site provides legal rights and resources for people with disabilities.</p>
                         </div>
                     </div>
                 </div>
@@ -197,63 +199,64 @@
     <!-- Achievements Section -->
     <section id="achievements" class="section achievements-section">
         <div class="container">
-            <h3 class="center-align">My Achievements</h3>
+            <h3>My Achievements</h3>
             <div class="row">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">Young Achiever Award</span>
-                        <p>Received the Young Achiever Award by the Girl Script Foundation for outstanding contributions to the community and efforts in spreading awareness about mental health and disability rights.</p>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Young Achiever Award</span>
+                            <p>Honored with the Young Achiever Award for my contributions to the community and mental health awareness.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">Special Award by Lok Jagruti Kendra</span>
-                        <p>Received a special recognition for my work towards promoting disability rights and mental health awareness.</p>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Special Award by Lok Jagruti Kendra</span>
+                            <p>Received special recognition for my efforts in promoting disability rights and mental health awareness.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">Global Guardian Angel Award</span>
-                        <p>Honored with the Global Guardian Angel Award by Vishalwin Foundation for my consistent efforts to improve lives and advocate for persons with disabilities.</p>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Global Guardian Angel Award</span>
+                            <p>Received the Global Guardian Angel Award for my continued advocacy for people with disabilities and mental health issues.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">GSET Qualified</span>
-                        <p>Successfully qualified for the Gujarat State Eligibility Test (GSET) for Assistant Professorship. This achievement was a step toward my academic and professional aspirations in teaching and research in psychology.</p>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">GSET Qualified</span>
+                            <p>Qualified for the Gujarat State Eligibility Test (GSET) for Assistant Professorship in psychology.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
+    <!-- Social Media Links -->
+    <section>
         <div class="container center-align">
-            <h3>Contact Me</h3>
+            <h3>Follow Me</h3>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/pranjalvyaas" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/vyaspranjal33" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-x"></i></a>
-                <a href="https://www.instagram.com/divyyaanng_psyychologist" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@Pranjalvyaas" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/pranjalvyaas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/vyaspranjal33" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@Pranjalvyaas" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/divyyaanng_psyychologist" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container center-align">
-            <p>&copy; 2024 Pranjal Vyas. All Rights Reserved.</p>
-        </div>
+        <p>&copy; 2024 Pranjal Vyas. All Rights Reserved. 
     </footer>
 
     <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            M.AutoInit();
-        });
-    </script>
 </body>
 
 </html>
