@@ -16,12 +16,12 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #e0f7fa;
-            color: #004d40;
+            background: linear-gradient(135deg, #00796b, #004d40); /* Gradient with Ocean Blue and Green */
+            color: white;
         }
 
         header {
-            background: linear-gradient(135deg, #00695c, #00796b);
+            background: linear-gradient(135deg, #00695c, #00796b); /* Ocean Blue and Green Gradient */
             padding: 10px 0;
         }
 
@@ -69,6 +69,19 @@
         .social-icons a:hover {
             color: #00796b;
         }
+
+        /* Adding background to the About and Projects Section */
+        .about-section, .projects-section {
+            background: linear-gradient(135deg, #80cbc4, #004d40); /* Light Ocean Blue to Dark Green */
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+
+        /* Styling the Image */
+        .about-section img {
+            border-radius: 50%;
+            width: 200px;
+        }
     </style>
 </head>
 
@@ -89,7 +102,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section about-section">
         <div class="container">
             <h3 class="center-align">About Me</h3>
             <p class="center-align">
@@ -98,13 +111,13 @@
                 and constant learning. My work integrates mental health expertise with a deep understanding of spiritual healing.
             </p>
             <div class="row center-align">
-                <img src="your-image-path.jpg" alt="Pranjal Vyas" class="circle responsive-img" style="width: 200px;">
+                <img src="your-image-path.jpg" alt="Pranjal Vyas" class="circle responsive-img">
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section projects-section">
         <div class="container">
             <h3 class="center-align">My Projects</h3>
             <div class="row">
