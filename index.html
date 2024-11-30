@@ -10,42 +10,37 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <!-- Google Fonts (Roboto for clean and modern look) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <style>
+        /* Global Body Style */
         body {
             font-family: 'Roboto', sans-serif;
-            background: #0288d1; /* Ocean Blue */
+            background-color: #0288d1 !important; /* Ocean Blue */
             color: white;
         }
 
         /* Navbar Style */
-        header {
-            background: #0288d1; /* Ocean Blue */
-            padding: 10px 0;
-        }
-
-        .nav-wrapper {
-            background-color: #0288d1 !important; /* Ensure navbar is Ocean Blue */
-        }
-
-        .navbar {
+        header, .nav-wrapper, .navbar, .navbar a {
             background-color: #0288d1 !important; /* Ocean Blue */
-        }
-
-        .navbar a {
             color: white !important;
         }
 
-        /* Navbar text hover effect */
+        /* Navbar Text Hover Effect */
         .navbar a:hover {
-            color: #80d3f5 !important; /* Light Ocean Blue for hover effect */
+            color: #80d3f5 !important; /* Light Ocean Blue */
         }
 
+        /* Dropdown Background */
+        .dropdown-content {
+            background-color: #0288d1 !important;
+        }
+
+        /* Section Styles */
         .section {
             padding: 60px 0;
         }
@@ -56,6 +51,7 @@
             font-family: 'Ubuntu', sans-serif;
         }
 
+        /* Button Styles */
         .btn {
             background-color: #0288d1;
         }
@@ -64,6 +60,7 @@
             background-color: #80d3f5;
         }
 
+        /* Footer Styles */
         footer {
             background-color: #0288d1;
             color: white;
@@ -78,6 +75,7 @@
             color: #0288d1;
         }
 
+        /* Social Icon Styles */
         .social-icons a {
             font-size: 2rem;
             margin: 0 10px;
@@ -88,19 +86,15 @@
             color: #0288d1;
         }
 
-        .about-section, .projects-section, .achievements-section {
-            background: #0288d1; /* Ocean Blue */
-            padding: 50px 0;
-            border-radius: 10px;
-        }
-
+        /* About Section Image */
         .about-section img {
             border-radius: 50%;
             width: 200px;
         }
 
+        /* Card Styles */
         .card-content {
-            background-color: #0288d1; /* Ocean Blue */
+            background-color: #0288d1 !important; /* Ocean Blue */
         }
 
         .card-title {
@@ -113,7 +107,7 @@
             color: #b2ebf2;
         }
 
-        /* Align the cards properly with Flexbox */
+        /* Flexbox Layout for Achievements Section */
         .achievements-section .container {
             display: flex;
             flex-wrap: wrap;
@@ -234,7 +228,7 @@
             <h3>Contact Me</h3>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/pranjalvyaas" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/vyaspranjal33" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-x"></i></a>
+                <a href="https://x.com/vyaspranjal33" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.instagram.com/divyyaanng_psyychologist" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.youtube.com/@Pranjalvyaas" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-youtube"></i></a>
             </div>
@@ -250,7 +244,11 @@
 
     <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
 </body>
 
 </html>
