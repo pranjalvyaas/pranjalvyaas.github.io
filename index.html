@@ -12,6 +12,9 @@
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+    <!-- Google Fonts (Roboto for clean and modern look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <style>
         body {
@@ -20,13 +23,19 @@
             color: white;
         }
 
+        /* Navbar Style */
         header {
             background: linear-gradient(135deg, #00695c, #00796b); /* Ocean Blue and Green Gradient */
             padding: 10px 0;
         }
 
+        /* Navbar Text Color */
         .navbar a {
-            color: white !important;
+            color: white !important; /* Ensures text color in navbar is white */
+        }
+
+        .navbar {
+            background-color: transparent; /* Remove default red background */
         }
 
         .section {
@@ -36,6 +45,7 @@
         .section h3 {
             color: #004d40;
             font-weight: 600;
+            font-family: 'Ubuntu', sans-serif;
         }
 
         .btn {
@@ -82,6 +92,21 @@
             border-radius: 50%;
             width: 200px;
         }
+
+        /* Project Card Styling */
+        .card-content {
+            background-color: #004d40; /* Darker green for the project cards */
+        }
+
+        .card-title {
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: #b2dfdb;
+        }
     </style>
 </head>
 
@@ -125,7 +150,7 @@
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Bindaas Bol</span>
-                            <p>A project aimed at spreading awareness about sex, sexuality, and reproductive health.</p>
+                            <p>A project aimed at spreading awareness about sex, sexuality, and reproductive health among people from all walks of life. Through discussions and content, we create an open and inclusive environment for learning about such important topics.</p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +158,23 @@
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Website Development - RPWD16</span>
-                            <p>Developed a website highlighting the Rights of Persons with Disabilities Act, 2016.</p>
+                            <p>Developed and launched a website dedicated to the Rights of Persons with Disabilities Act, 2016 (RPWD 16). This platform provides information about legal rights and resources for persons with disabilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">GSET Qualified</span>
+                            <p>Successfully qualified for the Gujarat State Eligibility Test (GSET) for Assistant Professorship. This achievement was a step toward my academic and professional aspirations in teaching and research in psychology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Young Achiever Award</span>
+                            <p>Received the Young Achiever Award by the Girl Script Foundation for outstanding contributions to the community and efforts in spreading awareness about mental health and disability rights.</p>
                         </div>
                     </div>
                 </div>
